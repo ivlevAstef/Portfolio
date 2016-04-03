@@ -60,3 +60,5 @@ wp-content/plugins/hello.php
 /bin/mysql/mysql5.7.9/data/ib_logfile1
 /bin/mysql/mysql5.7.9/data/ibdata1
 /bin/mysql/mysql5.7.9/data/IVLEV-PC.err
+/bin/mysql/mysql5.7.9/data/IVLEV-PC.pid
+/bin/mysql/mysql5.7.9/data/ibtmp1
