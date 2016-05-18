@@ -43,7 +43,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
 body {
   color: #696969;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   word-wrap: break-word;
   font-family: 'Lora', serif;
   line-height: 2;
@@ -320,8 +320,8 @@ textarea {
   margin: 0 0 1.5em;
 }
 .main-content-area {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 /* =Post styling
 ----------------------------------------------- */
@@ -452,8 +452,8 @@ article.post:first-child .post-inner-content {
 }
 .cat-title {
   border-bottom: 1px solid #dedede;
-  margin: -30px 0 50px 0;
-  padding-bottom: 20px;
+  margin: -20px 0 16px 0;
+  padding-bottom: 4px;
   text-align: center;
 }
 .cat-title ul {
@@ -593,7 +593,7 @@ article.grid iframe {
           transition: all 0.5s;
 }
 .page-links a:hover span {
-  background-color: #dfab28;
+  background-color: #df5028;
   border: none;
   color: #fff;
 }
@@ -605,7 +605,7 @@ article.grid iframe {
   color: #dfab28;
 }
 .pagination li:hover a {
-  color: #dfab28;
+  color: #df5028;
 }
 .pagination>.active>a,
 .pagination>.active>span,
@@ -790,7 +790,6 @@ ul#menu-social-items,
   font-size: 16px;
 }
 #secondary .widget .post-content a:hover {
-
 }
 .widget .post-content span {
     font-size: 12px;
@@ -929,7 +928,7 @@ input[type=submit] {
 /* =Custom Styles
 ----------------------------------------------- */
 #logo {
-  padding: 50px 0 45px 0;
+  padding: 16px 0 16px 0;
   text-align: center;
 }
 #line {
@@ -1051,7 +1050,7 @@ input[type=submit]:hover,
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-padding: 20px 0;
+padding: 8px 0;
 margin-right: 25px;
 line-height: 2.6;
 letter-spacing: 1px;
@@ -1089,7 +1088,7 @@ letter-spacing: 1px;
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #dfab28;
+  color: #df5028;
   background-color: transparent;
 }
 .dropdown-menu > li > a:hover,
@@ -1152,6 +1151,7 @@ letter-spacing: 1px;
   }
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  color : #df50ab;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 .dropdown-menu > li > a {
@@ -1656,7 +1656,7 @@ p.logged-in-as {
 }
 .header-search-icon:hover {
   background: transparent;
-  color: #dfab28;
+  color: #df5028;
 }
 #social li a span {
   display: none;

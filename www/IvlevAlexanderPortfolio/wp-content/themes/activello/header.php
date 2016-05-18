@@ -29,27 +29,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-
-	<header id="masthead" class="site-header" role="banner">
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="site-navigation-inner col-sm-12">
-						<div class="navbar-header">
-							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only"><?php _e( 'Toggle navigation', 'activello' ); ?></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<?php activello_header_menu(); // main navigation ?>
-
-					</div>
-				</div>
-			</div>
-		</nav><!-- .site-navigation -->
-
+<header id="masthead" class="site-header" role="banner">
 		<?php
 		$show_logo = true;
 		$show_title = false;
@@ -87,21 +67,34 @@
 					<div class="tagline"><?php bloginfo( 'description' ); ?></div>
 				<?php endif; ?>
 			</div><!-- end of #logo -->
-
-			<?php if( ! is_front_page() || ! is_home() ) : ?>
-			<div id="line"></div>
-			<?php endif; ?>
 		</div>
+		
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="site-navigation-inner col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only"><?php _e( 'Toggle navigation', 'activello' ); ?></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<?php activello_header_menu(); ?>
+
+					</div>
+				</div>
+			</div>
+		</nav><!-- .site-navigation -->
+
+		<?php if( ! is_front_page() || ! is_home() ) : ?>
+			<div id="line"></div>
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
-
-
+	
 	<div id="content" class="site-content">
-
-		<div class="top-section">
-			<?php activello_featured_slider(); ?>
-		</div>
-
 		<div class="container main-content-area">
 
 			<?php if( is_single() && has_category() ) : ?>
@@ -120,3 +113,4 @@
 
 			<div class="row">
 				<div class="main-content-inner <?php echo activello_main_content_bootstrap_classes(); ?> <?php echo $layout_class; ?>">
+
